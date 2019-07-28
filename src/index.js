@@ -68,10 +68,13 @@ class App extends React.Component {
     /*
   {
     bbox: [x, y, width, height],  // 物体を囲む境界ボックスのx値、y値、幅、高さ
-    class: "person",              // 分類名
+    class: "person",   // 分類名
+    [Dictionary]: *   // 辞書?      
     score: 0.8380282521247864     // そうである確率
   }
   */
+
+
   renderPredictions = predictions => {
 
     const ctx = this.canvasRef.current.getContext("2d");

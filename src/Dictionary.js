@@ -81,10 +81,6 @@ class Dictionary extends React.Component{
       );
         
     });
-
-    
-
-
     return (
       <div>
         <ul>{result}</ul>
