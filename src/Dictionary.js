@@ -1,11 +1,9 @@
 import React from "react";
 
-import { Media } from 'reactstrap';
+// import { Media } from 'reactstrap';
 
 import "./styles.css";
 // import wiki from "wikij
-
-
 
 class Dictionary extends React.Component{
 
@@ -67,23 +65,23 @@ class Dictionary extends React.Component{
     let result = word.map((entry, index) => {
 
       return (
-          <li key={index}>
-            <Media>
-              <img src={entry.bg} alt=""></img>
-            </Media>
+          <li key={index}  >
+            
+            <img src={entry.bg} alt=""></img>
+        
             <h3>{entry.word}</h3>
             <h3>{entry.phonetic}</h3>
               {/* <h3>{entry.origin}</h3> */}
             <h3>Example:</h3>
             <h3>{entry.meaning.noun[0].example}</h3>
-            <h3>{entry.meaning.noun[0].synonyms}</h3>
+            {/* <h3>{entry.meaning.noun[0].synonyms}</h3> */}
           </li>
       );
         
     });
     return (
       <div>
-        <ul>{result}</ul>
+        <ul className="dictionary box-1 img-1 col-xs-3">{result}</ul>
       </div>
       );
   }

@@ -104,8 +104,9 @@ class App extends React.Component {
 
       const textWidth = ctx.measureText(prediction.class).width;
       
-      console.log("1",prediction.class);
-      console.log("2",prediction.getLayer);
+      console.log("rendor",prediction.class);
+
+ 
       const textHeight = parseInt(font, 24); // base 10
       ctx.fillRect(x, y, textWidth + 10, textHeight + 10);
  
@@ -125,8 +126,8 @@ class App extends React.Component {
       let dictionaryRef = Dictionary 
       
 
-      // console.log("original",prediction.class);
-      // console.log("dictionary",dictionaryRef);
+      console.log("original",prediction.class);
+      console.log("***DICTIONARY***",dictionaryRef);
       ctx.fillText(prediction.class, x, y);
       // ctx.fillText(dictionaryRef, x, y);
 
@@ -141,10 +142,10 @@ class App extends React.Component {
     return (
       <div>
 
-        <Dictionary />
+        <Dictionary/>
 
         <video
-          className="size box PhotoGallery"
+          className="size outer-box box-1"
           autoPlay
           playsInline
           muted
@@ -153,7 +154,7 @@ class App extends React.Component {
           height="800"
         />
         <canvas
-          className="size box PhotoGallery"
+          className="size outer-box box-1"
           ref={this.canvasRef}
           width="600"
           height="800"
