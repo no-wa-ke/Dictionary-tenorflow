@@ -9,7 +9,7 @@
     "@tensorflow/tfjs": "0.14.0",
     "axios": "0.19.0",
     "classnames": "2.2.6",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "react-images": "1.0.0",
